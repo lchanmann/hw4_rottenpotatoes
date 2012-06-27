@@ -3,5 +3,5 @@
   = @movie.title
 
 %ul
-  - @similar_movies.each do |movie|
+  - @movie.similar.each do |movie|
     %li= movie.title
