@@ -1,0 +1,7 @@
+%h2
+  Similar movies for:
+  = @movie.title
+
+%ul
+  - @similar_movies.each do |movie|
+    %li= movie.title
