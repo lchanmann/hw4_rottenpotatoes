@@ -11,14 +11,14 @@ group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'launchy'
   gem 'rspec-rails'
-  gem 'simplecov'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'simplecov'
 end
 
 group :production do
