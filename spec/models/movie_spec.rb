@@ -18,4 +18,14 @@ describe Movie do
       star_wars.similar.should_not include star_wars
     end
   end
+
+  describe ".all_ratings" do
+    subject { Movie.all_ratings }
+
+    it { should include 'G' }
+    it { should include 'PG' }
+    it { should include 'PG-13' }
+    it { should include 'NC-17' }
+    it { should include 'R' }
+  end
 end
