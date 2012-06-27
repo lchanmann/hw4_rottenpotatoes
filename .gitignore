@@ -8,3 +8,4 @@ db/*.sqlite3
 *.swp
 vendor/ruby
 vendor/cache
+coverage/
