@@ -4,4 +4,5 @@
 
 %ul
   - @movie.similar.each do |movie|
-    %li= movie.title
+    %li
+      %a{ href: movie_path(movie), title: movie.title }= movie.title
