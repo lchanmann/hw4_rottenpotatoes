@@ -4,6 +4,6 @@ class Movie < ActiveRecord::Base
   end
 
   def similar
-    Movie.where director: self.director
+    Movie.where "director=? AND id<>?", self.director, self.id
   end
 end
