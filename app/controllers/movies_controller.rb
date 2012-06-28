@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find params[:id]
     unless @movie.director.present?
       flash[:notice] = "'#{@movie.title}' has no director info"
-      redirect_to root_path
+      redirect_to movies_path
     end
   end
 

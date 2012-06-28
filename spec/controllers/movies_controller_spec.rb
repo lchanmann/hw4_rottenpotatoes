@@ -32,7 +32,7 @@ describe MoviesController do
       before(:each) { get :similar, id: alien.id }
 
       it "should redirect to home page" do
-        response.should redirect_to root_path
+        response.should redirect_to movies_path
       end
 
       it "should flash no director info" do
